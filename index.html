@@ -7,9 +7,20 @@
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
     <title>Google Maps</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #map {
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
 </head>
 <body>
-    <div id='map' style='width: 400px; height: 300px;'></div>
+    <div id='map'></div>
     <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiYXNhZGJlay1kZXYiLCJhIjoiY2t3dXlmcHVmMXV3MzJ2cG1qNmhkd3NiaiJ9.t85Qc70M8dLztbUNls1QaQ';
     var map = new mapboxgl.Map({
