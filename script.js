@@ -6,8 +6,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiYXNhZGJlay1kZXYiLCJhIjoiY2t3dXlmcHVmMXV3MzJ2c
     function successLocation(position){
         console.log(position);
     }
-    function errorLocation(){
-        
+    function errorLocation(position){
+        console.log(position);
     }
 
 var map = new mapboxgl.Map({
