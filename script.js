@@ -4,19 +4,19 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiYXNhZGJlay1kZXYiLCJhIjoiY2t3dXlmcHVmMXV3MzJ2c
         enableHighAccuracy:true
     })
     function successLocation(position){
-        setupMAp(position.coords.longitude,position.coords.latitude)
+        setupMap(position.coords.longitude,position.coords.latitude)
         
     }
     function errorLocation(){
-        setupMAp([-2.24,53.48])
+        setupMap([-2.24,53.48])
     }
     
-    function setupMAp(center){
+    function setupMap(center){
         var map = new mapboxgl.Map({
                 container: 'map',
                 style: 'mapbox://styles/mapbox/streets-v11',
                 center:center,
                 zoom:15
-        });
+        })
     }
 
